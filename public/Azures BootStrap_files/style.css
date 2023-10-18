@@ -1,0 +1,217 @@
+/* STYLE ACCUEIL */
+.titreAcc {
+    font-size: 1.8rem;
+}
+
+.bleu {
+    color: rgb(0, 17, 255);
+}
+
+.Dmnd-content {
+    min-width: 370px;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divTypDmnd {
+    width: 95%;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(7, 205, 255);
+    background-color: rgba(167, 217, 230, 0.938);
+}
+
+.iconeDmnde {
+    height: 95%;
+    width: 25%;
+    border-radius: 7px;
+}
+
+.TitreDmnde {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* STYLE FOMULAIRE */
+.corpsformulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px
+}
+
+.inputs-content {
+    width: 97%;
+}
+
+.labels {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.inputinfos {
+    height: 2.6rem;
+}
+
+.check {
+    display: flex;
+    width: 95%;
+    justify-content: right;
+}
+
+.nav {
+    background-color: black;
+
+}
+
+.contentInfo {
+    display: flex;
+    width: 100%;
+}
+
+.titreInfo {
+    width: 17%;
+    display: flex;
+    z-index: 5;
+    background-color: black;
+}
+
+.infos {
+    font-size: 22px;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    animation: marquee 30s linear infinite;
+    /* Réglez la durée et les autres propriétés d'animation selon vos besoins */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
